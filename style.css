@@ -1,0 +1,40 @@
+body{font-family: Arial;
+	background-color: #075675;}
+
+button { display: inline-bock;
+		padding: 15px 25px
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: pink;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 5px #999;
+		button: hover{background-color: pink;}
+		button: active{background-color: pink;;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);}
+.search{
+    width: 350px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+	font-family: Georgia;
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	border: 1px solid orange;
+	margin-top: 13px;
+	color: aliceblue;
+	border-right: none;
+	font-size: 16px;
+	float: left;
+	padding: 10px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+

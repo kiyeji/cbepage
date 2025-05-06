@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+.header{
+width: 100%;
+height: 100px;
+background-color: rgb(255, 255, 255);}
+
+.fname{
+	font-family: Georgia;
+	width: 200px;
+	height: 20px;
+	background: transparent;
+	border: 1px solid hsl(0, 91%, 49%);
+	margin-top: 13px;
+	color: aliceblue;
+	border-right: ;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.registration-form {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #000;
+            width: 300px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="password"] {
+			width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .registration-form label {
+            font-size: 14px;
+            display: block;
+            margin: 10px 0;
+            color: #000;
+        }
+
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .registration-form p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .registration-form a {
+            color: blue;
+            text-decoration: none;
+        }
+
+		footer {
+            background-color: #00008B; /* Dark Blue background */
+            color: white;
+            padding: 30px 50px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            margin: 20px;
+            min-width: 200px;
+        }
+        .footer-section h3 {
+            color: yellow;
+            margin-bottom: 20px;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+.footer-bottom {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: lightgray;
+        }
+        .footer-bottom span {
+            color: white;
+            font-weight: bold;
+        }
+
+</style>
+</head>
+<body bgcolor="#075675">
+<table border="0" width="100%">
+<tr><th colspan="5"><div class="header"><center>
+<img src="coat of arms.png" height="100" width="100" align="left">
+<img src="60 anniversary.png" height="100" width="100" align="right">
+<h1 style="color: rgb(0, 0, 0)">REGISTER YOUR INFORMATION</h1>
+<p><b>DAR ES SALAAM | DODOMA | MWANZA | MBEYA</b></p></center>
+</div><br><br>
+</th></tr>
+<tr>
+<th><button style=" display: inline-bock;
+		padding: 15px 25px
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: black;
+		background-color: pink;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 5px #999;"><a href="index.html">Home</button></a></th>
+<th><button style=" display: inline-bock;
+		padding: 15px 25px
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: white;
+		background-color: pink;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 5px #999;"><a href="About us.html">About us</button></a></th>
+<th><button style=" display: inline-bock;
+		padding: 15px 25px
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: pink;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 5px #999;"><a href="Contact.html">Contact</button></a></th>
+<th><button style=" display: inline-bock;
+		padding: 15px 25px
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: pink;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 5px #999;"><a href="Service.html">Service</button></a></th>
+<th><button style=" display: inline-bock;
+		padding: 15px 25px
+		font-size: 24px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		color: #fff;
+		background-color: pink;
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 5px #999;"><a href="Register.html">Register</button></a></th>
+</tr></table>
+<br>
+<br>
+<br>
+<center><div class="registration-form">
+    <h2 style="color: chartreuse;">Registration</h2>
+    <form action="php/connect.php" method="post">
+        <input type="text" placeholder="First Name" id="FirstName" name="FirstName" required>
+        <input type="text" placeholder="Last Name" id="LastName" name="LastName" required>
+        <input type="email" placeholder="Email" id="email" name="email" required>
+        <input type="password" placeholder="Enter Password" id="password" name="password" required>
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the terms & conditions</label>
+
+        <button type="submit" value="Register">Register</button>
+        <label><a href="login.html">Already have an Acount</label></a>
+    </form>
+</div></center></td>
+</tr>
+</body>
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>CONTACT US</h3>
+            <ul>
+                <li>📞 +255–022–2150177</li>
+                <li>📧 rector@cbe.ac.tz</li>
+                <li>📍 Bibi Titi Mohamed Rd.<br>P.O. Box 1968,<br>Dar es Salaam</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>ABOUT CBE</h3>
+            <ul>
+                <li><a href="#">CBE History</a></li>
+                <li><a href="#">Staff Profiles</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Job Openings</a></li>
+                <li><a href="#">Map & Directions</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>OUR CAMPUSES</h3>
+            <ul>
+                <li><a href="#">Dar Campus</a></li>
+                <li><a href="#">Dodoma Campus</a></li>
+                <li><a href="#">Mwanza Campus</a></li>
+                <li><a href="#">Mbeya Campus</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="#">COSIS</a></li>
+                <li><a href="#">Online Application</a></li>
+                <li><a href="#">Staff Mail</a></li>
+                <li><a href="#">Learning Management System</a></li>
+                <li><a href="#">E-Office</a></li>
+                <li><a href="#">E-Mrejesho</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>EXTERNAL LINKS</h3>
+            <ul>
+                <li><a href="#">NECTA</a></li>
+                <li><a href="#">NACTEVET</a></li>
+                <li><a href="#">TCU</a></li>
+                <li><a href="#">HESLB</a></li>
+                <li><a href="#">E-Permit</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        Copyright © 2025 <span>College of Business Education</span>
+    </div>
+</footer>
+</html>
